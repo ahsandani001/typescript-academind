@@ -1,5 +1,6 @@
-var userInput;
-var username;
+"use strict";
+let userInput;
+let username;
 userInput = 5;
 userInput = 'Max';
 if (typeof userInput === 'string') {
@@ -8,5 +9,4 @@ if (typeof userInput === 'string') {
 function generateError(message, code) {
     throw { message: message, errorCode: code };
 }
-var result = generateError('An error occurred', 500);
-console.log(result);
+generateError('An error occurred', 500);
